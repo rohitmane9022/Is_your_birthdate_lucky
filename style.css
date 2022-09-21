@@ -2,7 +2,7 @@
   --color:white
 }
 html, body {
-  height: 100%;
+  height: 100vh;
   
  background: rgb(2,0,36);
 background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(79,144,140,1) 54%, rgba(0,212,255,1) 100%);
@@ -47,9 +47,37 @@ button{
     padding: 0.6rem 3rem;
     font-size: .9rem;
     margin-bottom: 1rem;
-    background-color: burlywood;
+    background-color: rgb(100, 181, 158);
     border-radius: 1rem;
 }
 p{
   color: var(--color);
+}
+.footer{
+  text-align: center;
+  margin-top: 50px;
+}
+.footer p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.social{
+  list-style: none;
+}
+.social li{
+  display: inline;
+  margin: 0.2rem;    
+}
+.privacy-notice{
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--color);
+}
+/* Media queries */
+@media (max-width:760px){
+  .container h1{
+      font-size: 1.2rem;
+  }
 }
